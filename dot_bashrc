@@ -161,4 +161,7 @@ if [[ "$TERM" == "xterm" ]]; then
 fi
 
 # Custom config
+
 set -o vi
+
+eval "$(mise activate bash)"
