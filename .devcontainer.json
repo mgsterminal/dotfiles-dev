@@ -4,8 +4,7 @@
 
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/flexwie/devcontainer-features/op:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
   "mounts": [
