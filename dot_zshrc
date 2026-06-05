@@ -29,6 +29,16 @@ export KEYTIMEOUT=1 # make switching between modes faster
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# autosuggestions — sugestão cinza baseada no histórico
+if [[ -f $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+  source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+# syntax-highlighting — colore comandos (DEVE ser o último source)
+if [[ -f $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+  source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
 if command -v nvim > /dev/null ; then
   export EDITOR="nvim"
   export VISUAL="nvim"
