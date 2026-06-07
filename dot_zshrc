@@ -63,6 +63,8 @@ fi
 
 autoload -Uz compinit && compinit
 
+zstyle ':completion:*' menu select
+
 source <(kubectl completion zsh)
 compdef k=kubectl
 
