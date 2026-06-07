@@ -63,6 +63,9 @@ fi
 
 autoload -Uz compinit && compinit
 
+source <(kubectl completion zsh)
+compdef k=kubectl
+
 if command -v fzf > /dev/null ; then
   source <(fzf --zsh)
 fi
@@ -79,7 +82,8 @@ fi
 
 # ~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+alias kgp='kubectl get pods'
+alias k='kubectl'
 alias v=nvim
 alias gp="git pull"
 alias lg=lazygit
