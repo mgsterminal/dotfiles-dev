@@ -17,7 +17,7 @@ fi
 
 if ! command -v chezmoi >/dev/null; then
 
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:mgsantos21/dotfiles-dev.git
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:mgsterminal/dotfiles-dev.git
 
 fi
 
